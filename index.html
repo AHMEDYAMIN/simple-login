@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>login form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- contact1 -->
+  <form action="https://formsubmit.co/razawork1999@gmail.com" method="POST">
+  <section class="w3l-simple-contact-form1">
+    <div class="contact-form section-gap">
+      <div class="wrapper">
+        <div class="text-center">
+        <h1 style="font-size: 40px; " >LOGIN FORM</h1>
+      </div>
+        <div class="contact-form" style="max-width: 450px; margin: 0 auto;">
+          <div class="form-mid">
+            <form action="message.html" method="post" action="#" autocomplete="off" onsubmit=" return validation()">
+              <div class="uname">
+                <input  id="uname"type="text" class="form-control" name="username" placeholder="username" >
+              </div>
+              <div class="pass">
+                <input id="pass"type="password" class="form-control" name="Sender" id="Sender" placeholder="password"
+                  >
+              </div>
+              <div class="email">
+                <input id="email"type="email" class="form-control" name="Subject" id="Subject" placeholder="email"
+                  >
+              </div>
+              <textarea id ="message" name="Message" class="form-control" id="Message" placeholder="Message"
+                ></textarea>
+              <button type="submit" class="btn btn-contact">Send Message</button>
+            </form>
+              <!-- <input type="button" class="btn btn-contact" onclick="sendmail();"  value="Send Message"> -->
+            
+              <script>
+                function validation() {
+                  var username = document.getElementById("uname");
+
+                  var password = document.getElementById("pass");
+                  var email = document.getElementById("email");
+                  var message = document.getElementById("message");
+                  if (username.value == "" ){
+                    alert("please enter username!");
+                    return false;
+                  }
+                  if( password.value == "" ){
+                    alert("please enter password!");
+                    return false;
+                  }
+                  if( email.value == "" ){
+                     alert("please enter email!");
+                      return false;
+                  }
+                  if(message.value == ""){
+                    alert("send a feedback message!");
+                    return false;
+                  }
+                  else
+                  {
+                    true;
+                  }
+
+                }
+
+              </script>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /contact1 -->
+  
+
+</body>
+</html>
